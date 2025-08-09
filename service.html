@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psysmart - Service</title>
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header fade-in-element">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="image/logo.png" alt="Psysmart Logo" class="logo-img">
+                <span class="logo-text">Psysmart</span>
+            </a>
+            <nav class="nav desktop-nav">
+                <a href="index.html#about" class="nav-link">About Us</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="index.html#team" class="nav-link">Our Partners</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </button>
+            <nav class="mobile-nav" id="mobileNav">
+                <a href="index.html#about" class="mobile-nav-link">About Us</a>
+                <a href="index.html#services" class="mobile-nav-link">Services</a>
+                <a href="index.html#team" class="mobile-nav-link">Our Partners</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </nav>
+            <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section fade-in-element">
+        <div class="hero-image">
+            <img src="image/image service.png" alt="People walking together">
+            <div class="hero-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Progress Indicators -->
+    <section class="py-4 bg-light fade-in">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="d-flex gap-3 align-items-center">
+                        <div class="rounded-pill progress-indicator bg-success active" style="width: 40px; height: 4px;"></div>
+                        <div class="rounded-pill progress-indicator bg-secondary" style="width: 40px; height: 4px;"></div>
+                        <div class="rounded-pill progress-indicator bg-secondary" style="width: 40px; height: 4px;"></div>
+                        <div class="rounded-pill progress-indicator bg-secondary" style="width: 40px; height: 4px;"></div>
+                        <div class="rounded-pill progress-indicator bg-secondary" style="width: 40px; height: 4px;"></div>
+                        <div class="rounded-pill progress-indicator bg-secondary" style="width: 40px; height: 4px;"></div>
+                        <span class="ms-3 text-muted small">
+                            <span id="current-question">1</span> of 6
+                        </span>
+                    </div>
+                    <div class="progress mt-2" style="height: 2px;">
+                        <div id="progress-bar" class="progress-bar bg-success" style="width: 16.67%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questionnaire Section -->
+    <section class="py-5 fade-in-element" id="services">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">Help us match you to the <span class="text-success">right therapist</span></h2>
+                    <p class="text-muted mb-5">
+                        It's important to have a therapist who you can establish a personal connection with. 
+                        The following questions are designed to help match you to licensed therapist based on 
+                        your needs and personal preferences.
+                    </p>
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <div id="question-container" class="question-container">
+                                <h5 id="question-title" class="card-title mb-4"></h5>
+                                <div id="options-container" class="d-grid gap-3"></div>
+                            </div>
+                            <div class="d-flex justify-content-between mt-4">
+                                <button id="prev-btn" class="btn btn-outline-secondary" style="visibility: hidden;">
+                                    <i class="fas fa-arrow-left me-2"></i>
+                                    Previous
+                                </button>
+                                <button id="next-btn" class="btn btn-success">
+                                    Next
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </button>
+                                <button id="find-therapist-btn" class="btn btn-success" style="display: none;">
+                                    Find My Therapist
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                            <div class="alert alert-info mt-4 d-flex align-items-start">
+                                <i class="fas fa-info-circle me-2 mt-1"></i>
+                                <small>We ask these questions so that we can connect you with a therapist who matches your needs and preferences.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team fade-in" id="team">
+        <div class="container">
+            <h2 class="section-title">Consultans</h2>
+            <div class="divider"></div>
+            <div class="team-slider-container">
+                <button class="slider-btn slider-btn-prev" id="teamPrevBtn">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <div class="team-slider" id="teamSlider">
+                    <!-- Team Member 1 -->
+                    <a href="https://www.linkedin.com/in/ngo-thanh-hue" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Ngo Thanh Hue.png" alt="TS.Ngo Thanh Hue">
+                        </div>
+                        <h3>TS.Ngo Thanh Hue</h3>
+                        <p>Deputy Director of the Institute of Psychology Vietnam-France Psychologist</p>
+                    </a>
+
+                    <!-- Team Member 2 -->
+                    <a href="https://www.linkedin.com/in/le-nguyen-phuong" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Le Nguyen Phuong.png" alt="TS.Le Nguyen Phuong">
+                        </div>
+                        <h3>TS.Le Nguyen Phuong</h3>
+                        <p>A psychologist with over 30 years of experience in teaching, research, and clinical psychology practice.</p>
+                    </a>
+
+                    <!-- Team Member 3 -->
+                    <a href="https://www.linkedin.com/in/tran-thanh-nam" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Tran Thanh Nam.png" alt="PGS. TS. Tran Thanh Nam">
+                        </div>
+                        <h3>PGS. TS. Tran Thanh Nam</h3>
+                        <p>Head of Faculty of Education Sciences - University of Education - VNU, psychologist</p>
+                    </a>
+
+                    <!-- Team Member 4 -->
+                    <a href="https://www.linkedin.com/in/vo-van-ban" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Vo Van Ban.png" alt="PGS. TS. BS CK Vo Van Ban">
+                        </div>
+                        <h3>PGS. TS. BS CK Vo Van Ban</h3>
+                        <p>President of the Vietnam Psychotherapy Association, Psychologist</p>
+                    </a>
+
+                    <!-- Team Member 5 -->
+                    <a href="https://www.linkedin.com/in/dr-nguyen-minh-duc" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Tran Van Cong.png" alt="PGS. TS Tran Van Cong">
+                        </div>
+                        <h3>PGS. TS Tran Van Cong</h3>
+                        <p>Clinical Psychologist specializing in cognitive behavioral therapy and anxiety disorders</p>
+                    </a>
+
+                    <!-- Team Member 6 -->
+                    <a href="https://www.linkedin.com/in/dr-tran-thi-lan" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Doan Huong.png" alt="THS. Doan Huong">
+                        </div>
+                        <h3>THS. Doan Huong</h3>
+                        <p>Family and couples therapist with expertise in relationship counseling and communication skills</p>
+                    </a>
+
+                    <!-- Team Member 7 -->
+                    <a href="https://www.linkedin.com/in/dr-le-hoang-phuc" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Vu Thuy Van.png" alt="THS. Vu Thuy Van">
+                        </div>
+                        <h3>THS. Vu Thuy Van</h3>
+                        <p>Child and adolescent psychologist focused on developmental psychology and learning disorders</p>
+                    </a>
+
+                    <!-- Team Member 8 -->
+                    <a href="https://www.linkedin.com/in/dr-pham-thi-mai" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Le Thi Mai Lien.png" alt="TS. Le Thi Mai Lien">
+                        </div>
+                        <h3>TS. Le Thi Mai Lien</h3>
+                        <p>Trauma specialist and EMDR therapist with focus on PTSD and emotional recovery</p>
+                    </a>
+                </div>
+                <button class="slider-btn slider-btn-next" id="teamNextBtn">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer fade-in-element">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-left">
+                    <div class="footer-brand">
+                        <img src="image/logo.png" alt="Psysmart Logo" class="footer-logo">
+                        <div class="footer-brand-text">
+                            <h3 class="footer-title">Psysmart</h3>
+                            <p class="footer-subtitle">Your happiness, our mission</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Phone: +84 (021)3456789</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-comment"></i>
+                            <span>Hotline: 0987654321 (Zalo, WhatsApp, 24/7)</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: Abc123@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h4 class="social-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-music"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© Copyright Psysmart All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/service.js"></script>
+</body>
+</html>

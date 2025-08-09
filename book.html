@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psysmart - Book an consultation</title>
+    <link rel="icon" type="image/png" href="image/logo.png">  </head>
+    <meta name="description" content="Book online psychology consultation sessions with top experts">
+    <meta name="author" content="Psysmart">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/book.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header fade-in-element">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo-icon">
+                        <img src="image/logo.png" alt="Psysmart Logo">
+                    </div>
+                    Psysmart
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Our Partners</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Animation -->
+    <section class="hero-section fade-in-element">
+        <!-- Hero 2: Nội dung -->
+        <div class="hero-slide hero-content-slide active">
+            <div class="hero-content" id="heroContent">
+                <div class="container">
+                    <h1 class="hero-title">Schedule Your Appointment Today</h1>
+                    <p class="hero-subtitle">
+                        We understand that every step you take towards your well-being is significant, and we're here to make that process as smooth as possible. Book an appointment now!
+                    </p>
+                    <button class="btn btn-booking-hero" id="onlineBookingBtn" type="button">
+                        <i class="fas fa-calendar-check me-2"></i>Select Appointment
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Hero 1: Ảnh nền -->
+        <div class="hero-slide hero-image-slide">
+            <img src="image/background service.png" alt="Psychology Therapy Types" class="hero-bg">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card hover-effect fade-in-element">
+                        <div class="service-header">
+                            <div class="flex-grow-1">
+                                <h3 class="service-title">Individual Wellness Consult (Adults)</h3>
+                                <div class="service-duration">60 minutes</div>
+                                <div class="service-price">From ₫1,500,000</div>
+                            </div>
+                            <button class="btn-book">Book Now</button>
+                        </div>
+                        <p class="service-description">Individual consultation sessions for adults focused on improving overall mental health with a comprehensive treatment approach. This consultation will help you build effective coping skills to deal with stress.</p>
+                        <small class="text-muted">60 minutes</small>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card hover-effect fade-in-element">
+                        <div class="service-header">
+                            <div class="flex-grow-1">
+                                <h3 class="service-title">Psychological & Counseling Consult (Adults)</h3>
+                                <div class="service-duration">75 minutes</div>
+                                <div class="service-price">From ₫1,800,000</div>
+                            </div>
+                            <button class="btn-book">Book Now</button>
+                        </div>
+                        <p class="service-description">In-depth psychological consultation for adults focused on addressing psychological and behavioral issues in a professional and effective manner.</p>
+                        <small class="text-muted">75 minutes</small>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card hover-effect fade-in-element">
+                        <div class="service-header">
+                            <div class="flex-grow-1">
+                                <h3 class="service-title">Psychiatric Consult (Adults)</h3>
+                                <div class="service-duration">45 minutes</div>
+                                <div class="service-price">From ₫2,000,000</div>
+                            </div>
+                            <button class="btn-book">Book Now</button>
+                        </div>
+                        <p class="service-description">In-depth psychiatric consultation for adults, including symptom assessment, accurate mental health diagnosis, and providing optimal personalized treatment methods.</p>
+                        <small class="text-muted">45 minutes</small>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card hover-effect fade-in-element">
+                        <div class="service-header">
+                            <div class="flex-grow-1">
+                                <h3 class="service-title">Case Conference (Virtual)</h3>
+                                <div class="service-duration">30 minutes</div>
+                                <div class="service-price">From ₫1,200,000</div>
+                            </div>
+                            <button class="btn-book">Book Now</button>
+                        </div>
+                        <p class="service-description">Information exchange meeting between experts and caregivers focused on providing professional advice to solve current problems.</p>
+                        <small class="text-muted">30 minutes</small>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card hover-effect fade-in-element">
+                        <div class="service-header">
+                            <div class="flex-grow-1">
+                                <h3 class="service-title">Couples Therapy</h3>
+                                <div class="service-duration">50 minutes</div>
+                                <div class="service-price">From ₫2,200,000</div>
+                            </div>
+                            <button class="btn-book">Book Now</button>
+                        </div>
+                        <p class="service-description">Professional couples therapy designed to help couples have healthy relationships and communicate more effectively.</p>
+                        <small class="text-muted">50 minutes</small>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card hover-effect fade-in-element">
+                        <div class="service-header">
+                            <div class="flex-grow-1">
+                                <h3 class="service-title">Family Therapy</h3>
+                                <div class="service-duration">50 minutes</div>
+                                <div class="service-price">From ₫2,000,000</div>
+                            </div>
+                            <button class="btn-book">Book Now</button>
+                        </div>
+                        <p class="service-description">Family therapy aimed at improving comprehensive family communication including both parents and children.</p>
+                        <small class="text-muted">50 minutes</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages-section">
+        <div class="container">
+            <h2 class="packages-title fade-in-element">
+                <i class="fas fa-gift me-3"></i>Consultation Packages & Offers
+            </h2>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="package-card hover-effect fade-in-element">
+                        <h4 class="package-name">4-Session Individual Counseling Package (for ages 3-18)</h4>
+                        <p class="package-details">
+                            Buy 4 packages and receive 1 free consultation session for children aged 3-18. Non-refundable if discontinued midway through package.
+                        </p>
+                        <div class="package-price">Available for Purchase</div>
+                        <p class="text-muted mb-3">Contact us for more details about this package.</p>
+                        <button class="btn-package">Get Package</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="package-card hover-effect fade-in-element">
+                        <h4 class="package-name">4-Session Individual Counseling Package (for PPP ages 3-18)</h4>
+                        <p class="package-details">
+                            Buy 4 packages and receive 1 free consultation session for children aged 3-18 (only for PPP 5.0K). Non-refundable if discontinued midway through package.
+                        </p>
+                        <div class="package-price">Available for Purchase</div>
+                        <p class="text-muted mb-3">Contact us for more details about this package.</p>
+                        <button class="btn-package">Get Package</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="package-card hover-effect fade-in-element">
+                        <h4 class="package-name">4-Session Adult Consultation Package (PPP ages 3-18)</h4>
+                        <p class="package-details">
+                            Buy 4 packages and receive 1 free consultation session for adults aged 3-18. Non-refundable if discontinued midway through package.
+                        </p>
+                        <div class="package-price">Available for Purchase</div>
+                        <p class="text-muted mb-3">Contact us for more details about this package.</p>
+                        <button class="btn-package">Get Package</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="package-card hover-effect fade-in-element">
+                        <h4 class="package-name">4-Session Adult Consultation Package (PPP ages 3-18)</h4>
+                        <p class="package-details">
+                            Buy 4 packages and receive 1 free consultation session for adults aged 3-18 (only for PPP 5.0K). Non-refundable if discontinued midway through package.
+                        </p>
+                        <div class="package-price">Available for Purchase</div>
+                        <p class="text-muted mb-3">Contact us for more details about this package.</p>
+                        <button class="btn-package">Get Package</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-calendar-plus me-2"></i>Book Your Appointment
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="serviceBookingForm">
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h5><i class="fas fa-user me-2"></i>Personal Information</h5>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">First Name <span class="required">*</span></label>
+                                    <input type="text" class="form-control" name="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Last Name <span class="required">*</span></label>
+                                    <input type="text" class="form-control" name="lastName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Email <span class="required">*</span></label>
+                                    <input type="email" class="form-control" name="email" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Phone Number <span class="required">*</span></label>
+                                    <input type="tel" class="form-control" name="phone" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Age <span class="required">*</span></label>
+                                    <input type="number" class="form-control" name="age" min="1" max="120" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Gender</label>
+                                    <select class="form-select" name="gender">
+                                        <option value="">Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                        <option value="prefer-not-to-say">Prefer not to say</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Selection -->
+                        <div class="form-section">
+                            <h5><i class="fas fa-stethoscope me-2"></i>Service Selection</h5>
+                            <div class="mb-3">
+                                <label class="form-label">Choose Service <span class="required">*</span></label>
+                                <select class="form-select" id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="individual-wellness">Individual Wellness Consult (Adults) - 60 min - ₫1,500,000</option>
+                                    <option value="psychological-counseling">Psychological & Counseling Consult (Adults) - 75 min - ₫1,800,000</option>
+                                    <option value="psychiatric-consult">Psychiatric Consult (Adults) - 45 min - ₫2,000,000</option>
+                                    <option value="case-conference">Case Conference (Virtual) - 30 min - ₫1,200,000</option>
+                                    <option value="couples-therapy">Couples Therapy - 50 min - ₫2,200,000</option>
+                                    <option value="family-therapy">Family Therapy - 50 min - ₫2,000,000</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Session Type <span class="required">*</span></label>
+                                <select class="form-select" name="sessionType" required>
+                                    <option value="">Select session type</option>
+                                    <option value="online">Online (Video Call)</option>
+                                    <option value="in-person">In-Person</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Appointment Schedule -->
+                        <div class="form-section">
+                            <h5><i class="fas fa-calendar me-2"></i>Preferred Schedule</h5>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Preferred Date <span class="required">*</span></label>
+                                    <input type="date" class="form-control" id="preferredDate" name="preferredDate" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Preferred Time <span class="required">*</span></label>
+                                    <select class="form-select" name="preferredTime" required>
+                                        <option value="">Select time</option>
+                                        <option value="09:00">09:00 AM</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="14:00">02:00 PM</option>
+                                        <option value="15:00">03:00 PM</option>
+                                        <option value="16:00">04:00 PM</option>
+                                        <option value="17:00">05:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Information -->
+                        <div class="form-section">
+                            <h5><i class="fas fa-info-circle me-2"></i>Additional Information</h5>
+                            <div class="mb-3">
+                                <label class="form-label">Main concerns or reasons for seeking consultation</label>
+                                <textarea class="form-control" name="concerns" rows="4" placeholder="Please describe what you'd like to work on or discuss..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-calendar-check me-2"></i>Submit Booking Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Package Booking Modal -->
+    <div class="modal fade" id="packageModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-gift me-2"></i>Get Package Information
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="packageBookingForm">
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h5><i class="fas fa-user me-2"></i>Personal Information</h5>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">First Name <span class="required">*</span></label>
+                                    <input type="text" class="form-control" name="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Last Name <span class="required">*</span></label>
+                                    <input type="text" class="form-control" name="lastName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Email <span class="required">*</span></label>
+                                    <input type="email" class="form-control" name="email" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Phone Number <span class="required">*</span></label>
+                                    <input type="tel" class="form-control" name="phone" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Package Selection -->
+                        <div class="form-section">
+                            <h5><i class="fas fa-gift me-2"></i>Package Selection</h5>
+                            <div class="mb-3">
+                                <label class="form-label">Choose Package <span class="required">*</span></label>
+                                <select class="form-select" id="package" name="package" required>
+                                    <option value="">Select a package</option>
+                                    <option value="individual-standard">4-Session Individual Counseling Package (ages 3-18)</option>
+                                    <option value="individual-ppp">4-Session Individual Counseling Package (PPP ages 3-18)</option>
+                                    <option value="adult-standard">4-Session Adult Consultation Package (ages 3-18)</option>
+                                    <option value="adult-ppp">4-Session Adult Consultation Package (PPP ages 3-18)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Interest Information -->
+                        <div class="form-section">
+                            <h5><i class="fas fa-info-circle me-2"></i>Additional Information</h5>
+                            <div class="mb-3">
+                                <label class="form-label">Why are you interested in this package?</label>
+                                <textarea class="form-control" name="interest" rows="3" placeholder="Please tell us about your interest in this package..."></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Preferred contact method</label>
+                                <select class="form-select" name="contactMethod">
+                                    <option value="">Select preferred method</option>
+                                    <option value="email">Email</option>
+                                    <option value="phone">Phone Call</option>
+                                    <option value="both">Both Email and Phone</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-envelope me-2"></i>Request Package Information
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer fade-in-element">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-left">
+                    <div class="footer-brand">
+                        <img src="image/logo.png" alt="Psysmart Logo" class="footer-logo">
+                        <div class="footer-brand-text">
+                            <h3 class="footer-title">Psysmart</h3>
+                            <p class="footer-subtitle">Your happiness, our mission</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Phone: +84 (021)3456789</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-comment"></i>
+                            <span>Hotline: 0987654321 (Zalo, WhatsApp, 24/7)</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: Abc123@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h4 class="social-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-music"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© Copyright Psysmart All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/book.js"></script>
+    <script>
+    let lastScrollY = window.scrollY;
+    const header = document.querySelector('.header') || document.querySelector('.navbar');
+    window.addEventListener('scroll', function() {
+        if (!header) return;
+        if (window.scrollY > lastScrollY && window.scrollY > 50) {
+            header.classList.add('hide');
+        } else {
+            header.classList.remove('hide');
+        }
+        lastScrollY = window.scrollY;
+    });
+    </script>
+</body>
+</html>

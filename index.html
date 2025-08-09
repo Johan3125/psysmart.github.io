@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psysmart - Your Happiness, Our Mission</title>
+     <link rel="icon" type="image/png" href="image/logo.png">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- Font chữ -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header fade-in-element">
+        <div class="container">
+            <div class="logo">
+                <img src="image/logo.png" alt="Psysmart Logo" class="logo-img">
+                <span class="logo-text">Psysmart</span>
+            </div>
+            
+            <nav class="nav desktop-nav">
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#team" class="nav-link">Our Partners</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </button>
+            
+            <nav class="mobile-nav" id="mobileNav">
+                <a href="#about" class="mobile-nav-link">About Us</a>
+                <a href="#services" class="mobile-nav-link">Services</a>
+                <a href="#team" class="mobile-nav-link">Our Partners</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section fade-in-element">
+        <!-- Hero 1: Ảnh nền (có class active) -->
+        <div class="hero-slide hero-image-slide active">
+            <img src="image/background service.png" alt="Psychology Therapy Types" class="hero-bg">
+        </div>
+        <!-- Hero 2: Nội dung (không có class active) -->
+        <div class="hero-slide hero-content-slide">
+            <div class="hero-content" id="heroContent">
+                <div class="container">
+                    <h1 class="hero-title">Schedule Your Appointment Today</h1>
+                    <p class="hero-subtitle">
+                        We understand that every step you take towards your well-being is significant, and we're here to make that process as smooth as possible. Book an appointment now!
+                    </p>
+                    <button class="btn btn-booking-hero" id="onlineBookingBtn" type="button">
+                        <i class="fas fa-calendar-check me-2"></i>Select Appointment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="container">
+            <!-- Đặt mũi tên ở đây -->
+            <div class="hero-arrow" id="scrollToServices">
+                <img src="image/arrowdown.png" alt="Arrow Down" />
+            </div>
+            <h2 class="section-title">Your Happiness, Our Mission</h2>
+            <p class="mission-text">
+                Psysmart is the leading Research - Training - Consulting and Therapy center in Vietnam today. 
+                Psysmart is always researching and developing to create a high-quality ecosystem of products and 
+                services, contributing to improving mental health and quality of life for the community.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about fade-in-element" id="about">
+        <div class="container">
+            <h2 class="section-title">About us</h2>
+            <div class="divider"></div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Psysmart is an organization operating in the field of research and application, 
+                        consulting and psychotherapy for individuals, organizations and communities.
+                    </p>
+                    
+                    <p>
+                        The organization provides training and psychosocial interventions in the fields of 
+                        psychology and psychiatry in education and training, consulting and 
+                        psychotherapy, product marketing.
+                    </p>
+                    
+                    <div class="skills-box">
+                        <h3>With specialized skills and knowledge, psysmart will help clients:</h3>
+                        <ul>
+                            <li>Listen and learn new perspectives to the problem, current situation</li>
+                            <li>Assessment and identification of psychological disorders</li>
+                            <li>Provide clients with appropriate and effective treatment</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <img src="image/huong-nghiep-40-chuyen-gia-tu-van-tam-ly-1.jpg" alt="Chuyen gia">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services fade-in-element" id="services">
+        <div class="container">
+            <h2 class="section-title">Psychological counseling services</h2>
+            <div class="divider"></div>
+            
+            <div class="services-grid images-grid">
+                <a href="service.html" class="service-image-link">
+                    <img src="image/for myself.png" alt="Service 1">
+                </a>
+                <a href="service.html" class="service-image-link">
+                    <img src="image/for me and my partner.png" alt="Service 2">
+                </a>
+                <a href="service.html" class="service-image-link">
+                    <img src="image/for my child.png" alt="Service 3">
+                </a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Team Section -->
+    <section class="team fade-in" id="team">
+        <div class="container">
+            <h2 class="section-title">The team of psychology experts</h2>
+            <div class="divider"></div>
+            
+            <div class="team-slider-container">
+                <button class="slider-btn slider-btn-prev" id="teamPrevBtn">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                
+                <div class="team-slider" id="teamSlider">
+                    <!-- Team Member 1 -->
+                    <a href="https://www.linkedin.com/in/ngo-thanh-hue" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Ngo Thanh Hue.png" alt="TS.Ngo Thanh Hue">
+                        </div>
+                        <h3>TS.Ngo Thanh Hue</h3>
+                        <p>Deputy Director of the Institute of Psychology Vietnam-France Psychologist</p>
+                    </a>
+
+                    <!-- Team Member 2 -->
+                    <a href="https://www.linkedin.com/in/le-nguyen-phuong" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Le Nguyen Phuong.png" alt="TS.Le Nguyen Phuong">
+                        </div>
+                        <h3>TS.Le Nguyen Phuong</h3>
+                        <p>A psychologist with over 30 years of experience in teaching, research, and clinical psychology practice.</p>
+                    </a>
+
+                    <!-- Team Member 3 -->
+                    <a href="https://www.linkedin.com/in/tran-thanh-nam" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Tran Thanh Nam.png" alt="PGS. TS. Tran Thanh Nam">
+                        </div>
+                        <h3>PGS. TS. Tran Thanh Nam</h3>
+                        <p>Head of Faculty of Education Sciences - University of Education - VNU, psychologist</p>
+                    </a>
+
+                    <!-- Team Member 4 -->
+                    <a href="https://www.linkedin.com/in/vo-van-ban" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Vo Van Ban.png" alt="PGS. TS. BS CK Vo Van Ban">
+                        </div>
+                        <h3>PGS. TS. BS CK Vo Van Ban</h3>
+                        <p>President of the Vietnam Psychotherapy Association, Psychologist</p>
+                    </a>
+
+                    <!-- Team Member 5 -->
+                    <a href="https://www.linkedin.com/in/dr-nguyen-minh-duc" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Tran Van Cong.png" alt="PGS. TS Tran Van Cong">
+                        </div>
+                        <h3>PGS. TS Tran Van Cong</h3>
+                        <p>Clinical Psychologist specializing in cognitive behavioral therapy and anxiety disorders</p>
+                    </a>
+
+                    <!-- Team Member 6 -->
+                    <a href="https://www.linkedin.com/in/dr-tran-thi-lan" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Doan Huong.png" alt="THS. Doan Huong">
+                        </div>
+                        <h3>THS. Doan Huong</h3>
+                        <p>Family and couples therapist with expertise in relationship counseling and communication skills</p>
+                    </a>
+
+                    <!-- Team Member 7 -->
+                    <a href="https://www.linkedin.com/in/dr-le-hoang-phuc" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Vu Thuy Van.png" alt="THS. Vu Thuy Van">
+                        </div>
+                        <h3>THS. Vu Thuy Van</h3>
+                        <p>Child and adolescent psychologist focused on developmental psychology and learning disorders</p>
+                    </a>
+
+                    <!-- Team Member 8 -->
+                    <a href="https://www.linkedin.com/in/dr-pham-thi-mai" class="team-member" target="_blank">
+                        <div class="member-avatar">
+                            <img src="image/Le Thi Mai Lien.png" alt="TS. Le Thi Mai Lien">
+                        </div>
+                        <h3>TS. Le Thi Mai Lien</h3>
+                        <p>Trauma specialist and EMDR therapist with focus on PTSD and emotional recovery</p>
+                    </a>
+                </div>
+                <button class="slider-btn slider-btn-next" id="teamNextBtn">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer fade-in-element">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-left">
+                    <div class="footer-brand">
+                        <img src="image/logo.png" alt="Psysmart Logo" class="footer-logo">
+                        <div class="footer-brand-text">
+                            <h3 class="footer-title">Psysmart</h3>
+                            <p class="footer-subtitle">Your happiness, our mission</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Phone: +84 (021)3456789</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-comment"></i>
+                            <span>Hotline: 0987654321 (Zalo, WhatsApp, 24/7)</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: Abc123@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h4 class="social-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-music"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© Copyright Psysmart All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

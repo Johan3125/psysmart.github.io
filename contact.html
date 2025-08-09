@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="enen">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psysmart</title>
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <meta name="description" content="Professional mental health services">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fade-in">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="image/logo.png" alt="Psysmart Logo" class="logo-img">
+                <span class="logo-text">Psysmart</span>
+            </a>
+
+            <div class="nav-menu">
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#partners" class="nav-link">Our Partners</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About Us</a>
+            <a href="#services" class="mobile-nav-link" onclick="closeMobileMenu()">Services</a>
+            <a href="#partners" class="mobile-nav-link" onclick="closeMobileMenu()">Our Partners</a>
+            <a href="contact.html" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section fade-in-element" style="animation-delay: 0.2s;">
+        <div class="hero-image">
+            <img src="image/image contact.png" alt="People walking together">
+            <div class="hero-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section fade-in-element" style="animation-delay: 0.4s;">
+        <div class="contact-container">
+            <div class="contact-grid">
+                <div class="contact-image fade-in" style="animation-delay: 0.6s;">
+                    <img src="image/doctor.png" alt="Professional healthcare provider">
+                </div>
+
+                <div class="contact-form-container fade-in" style="animation-delay: 0.8s;">
+                    <h2 class="contact-title">Send us the information</h2>
+                    <p class="contact-subtitle">Easily contact Psysmart by leaving your information below:</p>
+
+                    <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <select name="userType" required class="form-select">
+                                    <option value="">You are ...</option>
+                                    <option value="patient">Patient</option>
+                                    <option value="family">Family Member</option>
+                                    <option value="professional">Healthcare Professional</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your name ...?" required class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Telephone number" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Any queries or information you would like to share" required class="form-textarea" rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit-btn">Send Information</button>
+
+                        <p class="form-disclaimer">
+                            * By pressing the send button, you agree to the terms and conditions of the website's privacy policy.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer fade-in-element" style="animation-delay: 1s;">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-left">
+                    <div class="footer-brand">
+                        <img src="image/logo.png" alt="Psysmart Logo" class="footer-logo">
+                        <div class="footer-brand-text">
+                            <h3 class="footer-title">Psysmart</h3>
+                            <p class="footer-subtitle">Your happiness, our mission</p>
+                        </div>
+                    </div>
+
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Phone: +84 (021)3456789</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-comment"></i>
+                            <span>Hotline: 0987654321 (Zalo, WhatsApp, 24/7)</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: Abc123@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <h4 class="social-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fas fa-music"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>© Copyright Psysmart All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast">
+        <span id="toast-message"></span>
+    </div>
+
+    <script src="js/contact.js"></script>
+</body>
+</html>
